@@ -1,0 +1,431 @@
+/* BOJE */
+
+.bg-svetloPlava{
+    background-color: #2980b8;
+}
+
+.svetloPlava {
+    color: #2980b8
+}
+
+.bg-tamoPlava {
+    background-color: #2c3d50;
+}
+.tamnoPlava{
+    color: #2c3d50;
+}
+
+.bela{
+    color: white;
+}
+
+.bg-bela{
+    background-color: white;
+}
+
+/* PRE-DEF */
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/* BREAK OPTIONS */
+
+.break-dark{
+    background-color:  #2c3d50;;
+    height: 1px;
+    margin: 0px 100%;
+}
+
+.break-light{
+    background-color: #f4f4f4;
+    height: 1px;
+    margin: 0px 100%;
+}
+
+.break-animate{
+    animation: sirenjeBrejka 1s forwards;
+}
+    
+
+
+@keyframes sirenjeBrejka {
+    0% {
+        margin: 0px 50%;
+        
+    }
+
+    100% {
+        margin: 0px 40%;
+}
+}
+
+
+
+
+
+/* ZA JAVASCRIPT ANIMACIJU */
+
+.brzo_trajanje{
+    animation-duration: 0.5s;
+}
+
+.srednje_trajanje{
+    animation-duration: 1s;
+}
+
+.dugo_trajanje{
+    animation-duration: 1.5s;
+}
+
+.kratko_kasnjenje{
+    animation-delay: 0.5s;
+}
+
+.srednje_kasnjenje{
+    animation-delay: 1s;
+}
+
+.duze_kasnjenje{
+    animation-delay: 1.5s;
+}
+
+
+
+/* CUSTOM */
+
+.stiknav{
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    text-align: center;
+
+}
+
+.stiknav > .test{
+    display: none;
+    width: 480px;
+    margin: auto;
+
+}
+
+
+.stiknav > .test > .krug{
+    flex: 1;
+    border-radius: 50%;
+    margin: 10px;
+    opacity: 0.7;
+}
+
+.stiknav > .test > .krug:hover{
+    flex: 1;
+    animation: krug-hover 0.3s forwards;
+    margin: 10px;
+    opacity: 0.7;
+    color: #2980b8;
+}
+
+.stiknav > .test > .krug:active{
+    flex: 1;
+    margin: 10px;
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+
+@keyframes krug-hover {
+    100% { background-color: #2980b8 }
+}
+
+.stiknav-pojava {
+    animation: navigacija-pojava 0.6s forwards;
+}
+
+@keyframes navigacija-pojava {
+    0% {opacity: 0}
+    100% {opacity: 0}
+}
+
+
+.wrapper{
+    position: relative;
+    height: 700px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    min-height: 100vh;
+    z-index: 1;
+}
+
+.wrapper-background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("slike/background-main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+    --animate-delay: 5s;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.wrapper-background > .nav > .nav-item > a{
+
+        border-image-slice: 1;
+        border-width: 3px;
+        border-color: white;
+        border-style: solid;
+        margin-right: 20px;
+        margin-top: 20px;    
+        border-image-source: linear-gradient(320deg,rgba(255, 255, 255, 1) 5%,  rgba(255, 255, 255, 0) 90%);    
+        
+}
+
+
+.wrapper > .wrapper-content{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+
+.wrapper > .wrapper-content > .logo{ 
+    margin-top: 10%;
+    width: 500px;
+    height: 500px;
+    --animate-duration: 2s;
+    pointer-events: none;
+}
+
+
+.jumbotron1 > .lead{
+    padding: 20px 20%;
+
+}
+
+
+
+.display-4{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.jumbotron1 > .row{
+    padding: 0%;
+    margin: 0%;
+}
+
+.jumbotron1 > .row > .col{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+.coal2{
+    min-width: 380px;
+    max-width: 380px;
+}
+
+.coal3{
+    min-width: 380px;
+    max-width: 380px;
+}
+
+
+.break{
+    background-color: white;
+    height: 1px;
+    margin: 0px 40%;
+}
+
+/*Poliranje automobila*/
+
+.jumbotron4 > .row{
+    padding: 0%;
+    margin: 0%;
+    height: 400px;
+}
+
+
+.jumbotron4 > .display-4{
+    text-transform: uppercase;
+    font-size: 40px;
+    padding: 20px 20%;
+}
+
+.jumbotron4 > p{
+    padding: 20px;
+}
+
+.jumbotron4{
+    background-color: #f4f4f4
+}
+
+.text > h3{
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.jumbotron4 > .row > .text > p{
+    margin: auto 20%;
+    text-align: center ;
+    transform-origin: center;
+    padding-top: 10px;
+}
+
+.jumbotron5 > .display-4{
+    font-size: 40px;
+    padding: 20px;
+}
+
+
+.pozadina-ciscenje{
+    background-image: url("slike/background-cleaning.jpg");
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-top: 20px;
+    padding: 2%;
+}
+
+.oblacic{
+    
+    width: 33%;
+    padding: 10px;
+    border-radius: 15%;
+    background-color: rgba(255,255,255,0.7);
+    
+}
+
+
+
+
+
+
+/*Poliranje i keramička zaštita farova*/
+
+.jumbotron3{
+    background-color: #f4f4f4;
+}
+
+.jumbotron3 > .display-4{
+    font-size: 40px;
+    padding: 20px;
+    
+}
+
+.jumbotron3 > p{
+    padding: 20px 20%;
+}
+
+
+.jumbotron6 > iframe{
+    opacity: 0.9;
+    border-radius: 5%;
+    width: 90%;
+}
+
+
+* {box-sizing: border-box;}
+
+
+/* RETARDIRANO SRANJE */
+
+.container-farovi {
+    
+    left: 20%;
+    right: 20%;
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+
+.farovi {
+    position: relative;
+    height: 300px; 
+
+    }
+
+.far-los {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    }
+
+.far-los img {
+    display:block;
+    vertical-align: middle;
+
+  }
+
+.img-comp-slider {
+    position: absolute;
+    z-index:9;
+    cursor: ew-resize;
+    width: 40px;
+    height: 300px;
+    background-color:#2980b8;
+    border-radius: 10%;
+
+  }
+
+.scroll-tut{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    background-color: black;
+    z-index: 3;
+    text-align: center;
+    padding: 20% 0px;
+    font-size: 400%;
+    text-transform: uppercase;
+    transform-origin: center;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.scroll-tut > p {
+}
+@keyframes pulse {
+    0% {
+        opacity: 0.5;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+}
+}
+
+
+.scroll-tut > p{
+    animation: pulse 2s infinite;
+}
+
+
+
+
+/* KONTAKT I LOKACIJA */
+.jumbotron6{
+    font-size: 40px;
+    padding: 20px;
+}
